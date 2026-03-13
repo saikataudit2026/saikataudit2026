@@ -1,0 +1,34 @@
+# Virtual environment
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Generated pipeline outputs — re-created by running the scripts
+expense_receipt_mapping.csv
+combined_expense_data.csv
+merged_expense_data.csv
+final_expense_data.csv
+saikat_audit_details.csv
+results/
+screenshotoutput/
+
+# Source data — large binary / confidential, not for version control
+Expense details/
+Receipt_2021/
+backup/
+
+# Model weights and Ollama modelfile
+modelfile
+*.bin
+*.safetensors
+
+# Scratch / test images at repo root
+x.jpg
+x_p00*.jpg
+*.jpg
+*.png
+
+# IDE
+.vscode/
+.idea/

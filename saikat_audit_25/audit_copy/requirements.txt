@@ -1,0 +1,35 @@
+# ── Excel / data ──────────────────────────────────────────────────────────────
+openpyxl>=3.1
+pandas>=2.0
+
+# ── Image processing ──────────────────────────────────────────────────────────
+Pillow>=10.0
+PyMuPDF>=1.23          # fitz — headless PDF → image rendering
+numpy>=1.24
+
+# ── Screenshot / desktop automation ──────────────────────────────────────────
+pyautogui>=0.9
+psutil>=5.9
+
+# ── OCR / receipt extraction ──────────────────────────────────────────────────
+paddlepaddle>=2.6      # PaddleOCR backend (CPU build; use paddlepaddle-gpu for GPU)
+paddleocr>=2.7
+
+# ── Vision-language model (Qwen2-VL-7B) ──────────────────────────────────────
+torch>=2.1             # install the CUDA-enabled wheel separately — see INSTALL.md
+transformers>=4.45
+accelerate>=0.26
+bitsandbytes>=0.43     # 4-bit / 8-bit quantization (Linux/CUDA only)
+qwen-vl-utils>=0.0.8   # Qwen2-VL image processor helpers
+
+# ── Donut model ───────────────────────────────────────────────────────────────
+# transformers already covers this; no extra package needed
+
+# ── Gemini API ────────────────────────────────────────────────────────────────
+google-genai>=1.0      # google.genai client (replaces google-generativeai)
+
+# ── Date parsing ──────────────────────────────────────────────────────────────
+python-dateutil>=2.9
+
+# ── Plotting ──────────────────────────────────────────────────────────────────
+matplotlib>=3.8
